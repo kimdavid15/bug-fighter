@@ -18,7 +18,6 @@
 				var user = element; 	//get section's id (user1 or user2)
 				$("#"+user+"_default").attr("value",animated_img);		//save the default character for hover out
 				$("#"+user+"_name").text(name); 				//update the top text (Player1 vs. Player2)
-				//alert($("#"+user+"_default").val());
 			}
 
 			/*------------------------------------Action Listeners------------------------------------*/
@@ -46,7 +45,6 @@
 					$("#picked2").attr("src", getDefaultValue);
 				}
 
-
 			});
 			//Trigger update when new character is selected
 			$('img').click(function(){
@@ -61,7 +59,6 @@
 				alert("Battle begins with "+character1+" and "+character2+"!");
 			});
 		});
-
 	</script>
 </head>
 <body>
